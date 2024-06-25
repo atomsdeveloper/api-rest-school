@@ -1,5 +1,0 @@
-{ 
-    "execMap": {
-        "js": "nodemon -r sucrase/register"
-    }
-}

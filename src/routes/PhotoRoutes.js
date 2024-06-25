@@ -1,9 +1,11 @@
 import { Router } from 'express';
-import HomeController from '../controllers/HomeController.js';
+import loginRequired from '../middlewares/loginRequired.js';
+
+import PhotoController from '../controllers/PhotoController.js';
 
 const router = new Router();
 
-router.get('/', HomeController.index);
+router.post('/', loginRequired, PhotoController.store);
 
 export default router;
 

@@ -1,7 +1,6 @@
-class homeController {
-    index(req, res) {
-        res.status(200).json({status: true});
-    }
+class HomeController {
+  async index(req, res) {
+    res.status(200).json('index');
+  }
 }
-
-export default new homeController();
+export default new HomeController();
